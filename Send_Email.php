@@ -21,8 +21,8 @@ try {
 $mail->isSMTP(); // Use SMTP
 $mail->Host = 'smtp.gmail.com'; // SMTP server
 $mail->SMTPAuth = true; // Enable authentication
-$mail->Username = 'santivilla19maya@gmail.com'; // SMTP username
-$mail->Password = 'etrn oymd svlj thjb'; // SMTP password
+$mail->Username = 'santivillamaya@gmail.com'; // SMTP username
+$mail->Password = ''; // SMTP password
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Encryption (TLS/SSL)
 $mail->Port = 587; // TCP port (587 for TLS)
 
@@ -43,5 +43,6 @@ RegistroUsuario($conn,$name,$email,$phone);
 } catch (Exception $e) {
 echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
+
 
 ?>
